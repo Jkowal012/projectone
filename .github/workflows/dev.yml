@@ -28,6 +28,6 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "jkowal-flask" #Must be unique in Heroku
+          heroku_app_name: "projectone-dev" #Must be unique in Heroku
           heroku_email: "jk262@njit.edu"
           usedocker: true
