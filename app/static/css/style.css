@@ -1,0 +1,45 @@
+
+body {
+font-size: 200%;
+    font-family: "Times New Roman";
+    background-color: lightgray;
+    opacity: .9;
+}
+
+.container-fluid{
+    font-size: 90%
+    font-family: "Times New Roman";
+    background-color: lightgray;
+    opacity: .9;
+}
+footer {
+    font-size: 90%
+}
+
+.carousel-item img {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height:50vh;
+}
+
+h1 {
+font-size: 150%
+    font-family: "Times New Roman";
+}
+
+h2 {
+font-size: 135%
+    font-family: "Times New Roman";
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+    font-family: "Times New Roman";
+}
+
+.carousel-caption{
+    color: darkgrey;
+    font-family: "Times New Roman";
+}

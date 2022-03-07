@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+    <head>
+    <title>Git</title>
+        </head>
+    <h1>What are the major features of Git?</h1>
+    <h2>Branches</h2>
+    <p>Branches are used to manage multiple users writing code on the same project even if that project is composed of thousands of folders and files. The latest version of the code, meaning the most up to date and stable version, is referred to as the main branch (by default). Sprouting out from the main branch are other branches containing a copy of the code in the main branch that are ready to be worked on by a software developer. These branches can be named after the feature they are trying to implement, a simple “testing” branch, or an agreed upon structure determined by the creators.  They can then work on the code individually without breaking the program for anyone else working on it. Once completed and tested, the work done on the off-shoot branches is then integrated into the main branch and becomes available for all to benefit from. </p>
+    <h2>Merge</h2>
+    <p>After making the changes to the code and committing the changes to the local repository, the developer will have to submit the code to the main branch. This is done by creating a pull request, simply asking for the changes made in this branch to be added to what is considered the main branch. The pull requests are then merged into the code, using either squash merge for a single comment for all changes or merge commit to leave individual comments. </p>
+    <h2>Commit</h2>
+    <p>Firstly, the person must use a git add command to prepare the newly made content for transfer from a local work area to Git. Next git commit is used to add the changes, as well as a message of all the changes made, to whichever local branch was being worked on. By doing this, a “checkpoint’ is made for the developer meaning that if any further changes are made that end up breaking the program it is possible to revert to this stage of the code. </p>
+    <h2>Tags</h2>
+    <p>Tags are used to help organize all the commits done in a project. They are typically version names, such as Ver 1.0, 1.5, 2.5, etc., and make it easy to organize and look up the history of the project.</p>
+    <h2>Repositories</h2>
+    <p>Contains the entirety of the project. All the branches are stored to the repository. </p>
+{% endblock %}
