@@ -41,7 +41,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: jk262/is218
+          images: jk262/projectone
 
       - name: Build and push
         uses: docker/build-push-action@v2
