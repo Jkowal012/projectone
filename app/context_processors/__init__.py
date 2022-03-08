@@ -2,7 +2,7 @@ from os import getenv
 import datetime
 
 def utility_text_processors():
-    message = 'For educational purposes only; IS218'
+    message = 'Made by Jakub Kowal; For educational purposes only; IS218'
 
     def deployment_environment():
         return getenv('FLASK_ENV', None)
