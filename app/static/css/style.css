@@ -1,8 +1,13 @@
-.page2{
-nav ul{height:200px; width:18%;}
-nav ul{overflow:hidden; overflow-y:scroll;}
-}
+.page2 nav ul {height:150px; width:50%}
+.page2 nav ul {overflow:hidden; overflow-y:scroll}
 
+.page2.sidebar {
+
+position: absolute;
+right: 0;
+
+
+}
 body {
 font-size: 200%;
     font-family: "Times New Roman";
