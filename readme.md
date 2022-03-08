@@ -5,7 +5,7 @@
 * [Production Deployment](https://projectone-prod.herokuapp.com/)
 
 
-[![Development Workflow](https://github.com/Jkowal012/projectone/actions/workflows/dev.ymlbadge.svg)](https://github.com/Jkowal012/projectone/actions/workflows/dev.yml)
+[![Development Workflow](https://github.com/Jkowal012/projectone/actions/workflows/dev.yml/badge.svg)](https://github.com/Jkowal012/projectone/actions/workflows/dev.yml)
 
 * [Developmental Deployment](https://projectone-dev.herokuapp.com/)
 
