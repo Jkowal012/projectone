@@ -4,14 +4,14 @@
     <title>CI/CD</title>
         </head>
     <h1>Continuous Development/Continuous Deployment</h1>
-    <h2></h2>
-    <h3></h3>
-    <h2></h2>
-    <h3></h3>
-    <h2></h2>
-    <h3></h3>
-    <h2></h2>
-    <h3></h3>
-    <h2></h2>
-    <h3></h3>
+    <h2>How to use GitHub Actions</h2>
+    <p>The project is set up to use GitHub Actions to build, test, and deploy itself. GitHub actions allows the program to update itself to whatever version is required or even download new plug ins automatically. In the github/workflows directory, the dev.yml and prod.yml both use Github Actions to log into Heroku and DockerHub to update those repositories as well. In addition to these files, the repository on Github also uses special actions which allow for storing the password needed to log into these services. </p>
+    <h2>How to review code using development server before merging pull requests</h2>
+    <p>The dev.yml file  contains a GitHub Action “(on: pull_request: branches: - ‘main’)” which is a trigger so that when the file is ready to be pulled to the main branch something magical happens. Before being prompted to merge the files, they will check themselves to make sure that the newly added code will not cause a problem with the main branch through the -pytest command. After finishing the pytest, the program will automatically upload a copy to Heroku for easy testing.</p>
+    <h2>Deploy master to a production server and an image to DockerHub</h2>
+    <p>The prod.yml file also contains many useful Github Actions. While running the same pytest command as the dev.yml, the prod.yml file does this on a push request, not a pull request. The file isn’t done yet, as it then uploads itself to Heroku (as a production server) to display almost like dev.yml does; however, the prod.yml file also uploads an image to the dockerhub repository.</p>
+    <h2>Read more about:</h2>
+    <a href="https://www.martinfowler.com/bliki/ContinuousDelivery.html">Continuous Delivery</a>
+    <a href="https://www.martinfowler.com/articles/continuousIntegration.html">Continuous Integration</a>
+
 {% endblock %}
