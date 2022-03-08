@@ -1,3 +1,7 @@
+.page2{
+nav ul{height:200px; width:18%;}
+nav ul{overflow:hidden; overflow-y:scroll;}
+}
 
 body {
 font-size: 200%;
@@ -7,7 +11,7 @@ font-size: 200%;
 }
 
 .container-fluid{
-    font-size: 90%
+    font-size: 90%;
     font-family: "Times New Roman";
     background-color: lightgray;
     opacity: .9;
@@ -24,12 +28,12 @@ footer {
 }
 
 h1 {
-font-size: 150%
+font-size: 150%;
     font-family: "Times New Roman";
 }
 
 h2 {
-font-size: 135%
+font-size: 135%;
     font-family: "Times New Roman";
     font-weight: bold;
 }
