@@ -3,15 +3,16 @@
     <head>
     <title>Docker</title>
         </head>
-    <body class="page2">
+
     <h1>Docker and Dockerhub</h1>
     <h2>Containers</h2>
     <p>Once an image is used, it creates a container which creates a modifiable layer on top of the unmodifiable image layer. It includes an image, execution environment, and a set of instructions. A user can create multiple different containers all from the same image. An easy to think of it like shipping containers which make it possible to ship cargo via car, land, or sea by being in a uniform shape that everyone can accommodate. Containers, for computers, function similarly by letting the user run an application separately from the developers or user’s personal computer system. By including only what is needed to make the application work, it reduces file size as well as computing power required to run it. </p>
     <h2>Images</h2>
     <p>Are the instruction set used to create containers. Once created they are immutable, meaning they cannot be changed and are used as a set of instructions to build apps. The same image can and should be reused in different projects for many reasons. One of them being that it saves the developer plenty of time by not having to rewrite monotonous code. It also offers a stable environment to test new code in. If the developer knows that the base image is well made, then they do not have to troubleshoot it if the problem arises. 	If the project is large enough, it can also save plenty of disk space as it will not be repeated throughout the project. An image needs to contain all of the frameworks and dependencies needed to run the application.</p>
     <h2>Docker Commands</h2>
+    <div class="dockercommands">
     <nav>
-    <ul>
+        <ul>
     <li>docker –version</li>
         <dl>displays the current version of docker installed</dl>
     <li>docker pull <image name></li>
@@ -40,14 +41,25 @@
         <dl>delete a stopped container</dl>
     <li>docker build <path to docker file></li>
     <dl>used to create an image from a specified folder</dl>
-    </ul>
+        </ul>
     </nav>
-    <div class="sidebar">
-        <div>Some commonly used commands for docker</div>
-        <div>Make sure to be in the right directory when using command</div>
-        <div>CMD/Powershell/Ubuntu terminal may have different commands to accomplish the same goal</div>
-
     </div>
-    </body>
+<h2> How to Start a project via command line</h2>
+    <ol>
+    <li>Open terminal of choice</li>
+    <li>Use command “cd <directory path>” to choose in which directory the folder should be located in. If no project exists, use either command “docker pull <image name>” or “git clone <repository name>” to download the file.</li>
+    <li>Use the cd command to enter the directory and then type “docker build -t <choose what to name the image></li>
+    <li>docker run -dp 3000:3000 <what the image was named in the step before></li>
+    <li>Use “docker -it <image name> sh” to access terminal and run commands inside of the container</li>
+    </ol>
+    <h2>How to open a container via command line</h2>
+    <ol>
+    <li>In cmd, use command “docker ps -a” </li>
+    <li>This will show all containers that we ran. Copy the container id of the image required. </li>
+    <li>Use command <docker exec -it <container id> bash</li>
+    <li>Can use a simple command like “ls” or “uptime”</li>
+    </ol>
+<h2>Dockerhub Repo</h2>
+    <a href="https://hub.docker.com/repository/docker/jk262/projectone">Click here!</a>
 
 {% endblock %}

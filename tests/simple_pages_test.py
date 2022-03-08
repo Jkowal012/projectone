@@ -13,7 +13,7 @@ def test_request_index(client):
     """This makes the index page"""
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Index Page" in response.data
+    assert b"Welcome!" in response.data
 
 def test_request_page1(client):
     """This makes page1"""
