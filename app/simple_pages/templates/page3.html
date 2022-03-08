@@ -4,14 +4,17 @@
     <title>Python/Flask</title>
         </head>
     <h1>Python/Flask</h1>
-    <h2></h2>
-    <h3></h3>
-    <h2></h2>
-    <h3></h3>
-    <h2></h2>
-    <h3></h3>
-    <h2></h2>
-    <h3></h3>
-    <h2></h2>
-    <h3></h3>
+    <h2>Testing with Python/Flask</h2>
+    <p>Pytest is a tool that programmers can use to make sure that their code is functional before deploying it for use. The project required a separate test folder that was used to store __init__.py, context_process_test.py, and simple_pages_test.py. The context_process_test.py is used to check the copyright on the bottom of the webpage while the simple_pages_test.py is used to make sure that the webpages are properly displaying the page that they should (meaning that the home page doesn’t display a contact page for instance). It also checks and makes sure that the nav bar is also functioning properly. At the end, it tests to make sure that a page that does not exists returns an error 404 code. “Response = client.get()” goes and and grabs the page to be inspected. The line “assert response.status_code == 200” is used to determine if the page is functional or not with 200 being the “all good” sign. Finally, the “assert” statement is used to compare what is there to what should be there and determine if the test has passed or not. </p>
+    <h2>Creating Simple Pages</h2>
+    <p>The web pages were created using a base.html that contained the navbar and the copyright information. This was placed in static/templates folder because it is often called upon and the position cannot move. The simple pages folder then had a templates folder created inside with a .html file for each web page needed. The previously made base was then extended and the required text was filled in individually on the page. A style.css was then created in the static folder to better accommodate the HTML.</p>
+<h2>Github Repo</h2>
+    <a href="https://github.com/Jkowal012/projectone">Click here!</a>
+    <h2>Flask Blueprint</h2>
+    <a href="https://flask.palletsprojects.com/en/2.0.x/blueprints/">Click here!</a>
+    <h2>Flask testing with Pytest</h2>
+    <a href="https://flask.palletsprojects.com/en/2.0.x/testing/">Click here!</a>
+    <h2>Flask home</h2>
+    <a href="https://flask.palletsprojects.com/en/2.0.x/">Click here!</a>
+
 {% endblock %}
